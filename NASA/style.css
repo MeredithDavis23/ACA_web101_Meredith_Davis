@@ -2,10 +2,9 @@
     background-color: blue;
 } */
 body {
-    margin: 0 auto;
     width: 850px;
-    display: table-cell;
-    vertical-align: middle;
+    height: 324px;
+    margin: auto;
 }
 
 main {
@@ -15,13 +14,14 @@ main {
     background-image: url("NASA image2.jpg");
     background-size: cover ;
     color: white;
-    margin: 0 auto;
     font-family: 'Anton';
     font-size: xx-large;
     text-align: center;
     align-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
 section {
     display: flex;
@@ -40,24 +40,29 @@ section {
 article { 
     width: 270px;
     height: 374px;
-    background-color: lightgray;
+    background-color: skyblue;
     flex-direction: column;
     justify-content: flex-start;
     font-family: 'Roboto';
 }
+h1 {
+    align-items: center;
+}
 h2 {
     font-size: 25px;
-
 }
 #name-entry {
-    font: Arial;
-    display: flex;
-    flex-direction: column;
-}
-#message-entry {
-    flex-direction: column;
-    display:flex ;
-    width: 20px;
-}
-    
 
+}
+#message {
+    font: Arial;
+    flex-direction: column;
+    width: 90%;
+}    
+#send-button {
+    background-color: lavender;
+    border: black;
+    height: 20px;
+    width: 20px;
+    align-content: flex-end;
+}
