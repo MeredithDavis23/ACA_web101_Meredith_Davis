@@ -4,6 +4,8 @@
 body {
     margin: 0 auto;
     width: 850px;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 main {
@@ -46,6 +48,16 @@ article {
 h2 {
     font-size: 25px;
 
+}
+#name-entry {
+    font: Arial;
+    display: flex;
+    flex-direction: column;
+}
+#message-entry {
+    flex-direction: column;
+    display:flex ;
+    width: 20px;
 }
     
 
