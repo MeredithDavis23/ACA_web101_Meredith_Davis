@@ -1,0 +1,51 @@
+/* body { 
+    background-color: blue;
+} */
+body {
+    margin: 0 auto;
+    width: 850px;
+}
+
+main {
+    width: 850px;
+    height: 450px;
+    border: 1px blue solid;
+    background-image: url("NASA image2.jpg");
+    background-size: cover ;
+    color: white;
+    margin: 0 auto;
+    font-family: 'Anton';
+    font-size: xx-large;
+    text-align: center;
+    align-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+section {
+    display: flex;
+    margin: 0 auto;
+    height: 324px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#content {
+    width: 850px;
+    height: 324px;
+    border: black;
+    background-color: lightgrey;
+    font-size: initial;
+}
+article { 
+    width: 270px;
+    height: 374px;
+    background-color: lightgray;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: 'Roboto';
+}
+h2 {
+    font-size: 25px;
+
+}
+    
+
