@@ -1,6 +1,6 @@
-/* body { 
-    background-color: blue;
-} */
+body {
+    background-color: rgb(27, 14, 110);
+}
 body {
     width: 850px;
     height: 324px;
@@ -22,6 +22,7 @@ main {
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
+    vertical-align: middle;
 }
 section {
     display: flex;
@@ -40,7 +41,7 @@ section {
 article { 
     width: 270px;
     height: 374px;
-    background-color: skyblue;
+    background-color: lightgray;
     flex-direction: column;
     justify-content: flex-start;
     font-family: 'Roboto';
@@ -51,18 +52,18 @@ h1 {
 h2 {
     font-size: 25px;
 }
-#name-entry {
-
-}
-#message {
+#message-entry {
     font: Arial;
     flex-direction: column;
+    align-content: flex-start;
     width: 90%;
-}    
+    vertical-align: top;
+}  
+
 #send-button {
     background-color: lavender;
     border: black;
     height: 20px;
     width: 20px;
-    align-content: flex-end;
+    align-content: flex-start;
 }
