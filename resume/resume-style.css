@@ -16,8 +16,8 @@ h1 {
     color: maroon;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-image: url(/resume/trophy4.jpg);
-    width: 900px;
-    height: 175px;
+    background-repeat: no-repeat;
+    background-size: 600px 125%;
     }
 h2 {
     font-size: 30px;
@@ -26,9 +26,11 @@ h2 {
 }
 h3 {
     font-size: 25px;
+    color: maroon;
 }
 h4 {
     font-size: 20px;
+    color: maroon;
 }
 h5 {
     font-size: 17px;
@@ -40,7 +42,7 @@ img {
 }
 article {
     display: grid;
-    text-align: left;
+    text-align: justify;
     grid-row: auto;
     font-size: 18px;
 }
