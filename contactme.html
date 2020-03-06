@@ -1,15 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> <link rel="stylesheet" href="./contactme.css.css"
+<head> <link rel="stylesheet" href="./contactme.css">
+    <script src="contactme.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
 </head>
 <body>
     <title>Contact Me</title>
-    <h1>Contact Me</h1>
+    <!-- <h1>Contact Me</h1>
     <p>Phone Number: (512)508-6779</p>
     <p>Email: meredith_e_davis@yahoo.com</p>
-    <p>Twitter:@msdavisgtkinder</p>
+    <p>Twitter:@msdavisgtkinder</p> -->
+    <div>
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+        <h2>Comments</h2>
+        <textarea name="Comments" cols="50" rows="10"></textarea><br>
+        <input type="submit" value="Submit">
+    </form><br>
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+        <label for="Email">Email:</label><br>
+        <input type="text" id="Email" name="email"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+        <h2>Do you wish to be contacted?</h2>
+        <input type="radio" id="yes" name="contact" value="Yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="contact" value="No">
+        <label for="no">No</label>
+        <input type="submit" value="Submit">
+    </form>
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+        <h2>How Did You Hear About Me?</h2>
+        <input type="checkbox" id="classmate" name="hear" value="Classmate">
+        <label for="classmate">Classmate</label><br>
+        <input type="checkbox" id="resume" name="hear" value="Resume">
+        <label for="ResumeSubmission">Resume Submission</label><br>
+        <input type="checkbox" id="LinkedIn" name="hear" value="LinkedIn">
+        <label for="LinkedIn">LinkedIn</label><br>
+        <input type="checkbox" id="CodingAcademyRec" name="hear" value="CodingAcademyRec">
+        <label for="CodingAcademyRec">Coding Academy Rec</label><br>
+        <input type="submit" value="Submit">
+    </form>
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+        <h2>If you would like to receive an email on your birthday, enter it below:</h2>
+            <input type="date" id="birthday" name="birthday" min="2019-06-10" value="birthday">
+            <label for="birthday">Date of Birth</label><br>
+            <input type="submit" value="Submit">
+    </form>
+    </div>
 </body>
 </html>
