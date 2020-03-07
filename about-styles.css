@@ -2,7 +2,7 @@ body {
     font-family: 'Indie Flower', cursive, bold;
     font-size: medium;
     text-align: center;
-    background-color: sandybrown;
+    background-color:lightcoral;
     /* background-image: url(backgroundpic.jpg); */
 }
 
@@ -16,7 +16,15 @@ img {
 }
 div {
     display: grid;
+    width: 1060px;
+    height: 290px;
+    text-align: left;
+    overflow-wrap: break-word;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 40% 50%;
     margin: auto;
+    /* justify-content: space-between; */
+    border: 1px grey solid;
+    column-gap: 5%;
+    /* justify-content: space-evenly; */
 }
