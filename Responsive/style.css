@@ -81,36 +81,45 @@ p {
 
 @media (max-width: 414px) {
     body {
-        background-color: white;
+        background-color: crimson;
         margin-top: 0em;
+        padding-top: 0px;
+        display: grid
     }
 #container {
-    width: 800px;
-    min-width: 414px;
-    height: 1300px;
-    background-color: crimson;
+    width: 414px;
+    /* min-width: 414px; */
+    height: auto;
+    background-color:teal;
     margin: auto;
     color: white;
     font-family: 'Anton';
     font-size: 30px;
     text-align: center;
     align-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
     display: grid;
     grid-template-rows: 25% 25% 25% 25%;
     grid-area: container;
 }  
 #content {
     max-width: 414px;
+    height: 975px;
+    margin-bottom: 0em;
     display: flex;
     flex-direction: column;
     align-items: center;
+    word-wrap: normal;
+    background-color: crimson;
 } 
 h1 {
     display: flex;
     margin: 20px;
-    padding: 0px;
+    padding: 10px;
     font-size: 30px;
-    align-items: center;
+    justify-content: center;
+    /* word-wrap: break-word; */
+    /* background-color: teal; */
+    }
 }
