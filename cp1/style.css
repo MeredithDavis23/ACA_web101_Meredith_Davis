@@ -32,18 +32,20 @@ footer {
     width: 100%;
     height: 100px;
     background-color: rgb(28, 146, 146);
+    color: white;
     text-align: center;
 }
 .socialMedia {
-    width: 50px;
-    height: 62px;
+    width: 60px;
+    /* height: 52px; */
     display: flex;
     position: relative;
     /* padding-bottom: 40px; */
 }
 .fa {
-    padding: 20px;
+    /* padding: 20px; */
     font-size: 30px;
+    margin-left: 10px;
     width: 30px;
     text-align: center;
     text-decoration: none;
@@ -169,7 +171,7 @@ h2 {
     border: 4px solid rgb(28, 146, 146);
 }
  .featured {
-    margin-top: 40px;
+    margin-top: 45px;
     margin-bottom: 20px;
     width: 460px;
     height: 603px;
@@ -198,7 +200,7 @@ h2 {
     grid-column: 3/4;
  }
 .hairstyle {
-    margin-top: 40px;
+    margin-top: 45px;
     width: 460px;
     height: 200px;
     border: rgb(28, 146, 146) 6px solid;
@@ -270,4 +272,35 @@ h2 {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  
+  @media screen and (max-width: 800px) {
+    .body {
+        max-width: 100%;
+    }
+    header {
+        max-width: 100%;
+    }
+    }
+    .column {
+      flex: 50%;
+      max-width: 48%;
+    }
+    .contact-us {
+      max-width: 100%;
+    }
+  }
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 99%;
+    }
+   .body {
+       max-width: 100%;
+   }
+   header {
+       max-width: 100%;
+   }
+   .contact-us {
+    max-width: 100%;
+  }
+}
