@@ -238,16 +238,15 @@ h2 {
     min-height: 812px;
     flex: 25%;
     max-width: 24%;
-    padding: 20px 0px 50px;
-    /* border: mediumblue 1px solid; */
+    /* padding: 20px 0px 50px; */
+    /* margin: 7px; */
+    justify-content: space-between;
   }
   .column img {
     margin-top: 8px;
-    /* margin-right: auto;
-    margin-left: auto; */
-    /* justify-content: space-between; */
     vertical-align: middle;
-    width: 70%;
+    width: 90%;
+    /* justify-content: space-between; */
     border: 4px solid rgb(28, 146, 146);
   }
   .contact-us {
@@ -272,35 +271,41 @@ h2 {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  @media screen and (max-width: 800px) {
-    .body {
-        max-width: 100%;
-    }
-    header {
-        max-width: 100%;
-    }
-    }
+  @media screen and (max-width: 900px) {
     .column {
       flex: 50%;
       max-width: 48%;
     }
-    .contact-us {
-      max-width: 100%;
+    #news {
+        max-width: 65%;
+        overflow-wrap: break-word;
+    }
+    .header {
+        max-width: 90%;
+    }
+    .navbar {
+        max-width: 900px;
+        height: 75px;
+        margin: auto;
     }
   }
+  
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     .column {
       flex: 100%;
       max-width: 99%;
     }
-   .body {
-       max-width: 100%;
-   }
-   header {
-       max-width: 100%;
-   }
-   .contact-us {
-    max-width: 100%;
+    #news {
+        max-width: 65%;
+        overflow-wrap: break-word;
+    }
+    .header {
+        max-width: 90%;
+    }
+    .navbar {
+        max-width: 600px;
+        height: 75px;
+        margin: auto;
+    }
   }
-}
