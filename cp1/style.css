@@ -37,7 +37,6 @@ footer {
 }
 .socialMedia {
     width: 60px;
-    /* height: 52px; */
     display: flex;
     position: relative;
     /* padding-bottom: 40px; */
@@ -290,22 +289,100 @@ h2 {
     }
   }
   
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
+    body {
+        width: 100%;
+        margin: auto;
+        height: fit-content;
+    }
     .column {
       flex: 100%;
-      max-width: 99%;
+      max-width: 98%;
     }
     #news {
         max-width: 65%;
         overflow-wrap: break-word;
     }
-    .header {
-        max-width: 90%;
+    header {
+        width: 100%;
+        height: 140px;
     }
     .navbar {
-        max-width: 600px;
-        height: 75px;
-        margin: auto;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
     }
+    .nav {
+        width: 450px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 15px;
+    }
+    .banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        height: fit-content;
+        overflow-wrap: break-word;
+        margin-left: 10px;
+    }
+    #banner-image {
+        padding: 0;
+    }
+    /* .container {
+        min-height: calc(100vh - 100px - 115px);
+        width: 97%;
+        display: grid;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        align-content: center;
+        grid-template-columns: 22% 22% 22% 22%;
+        grid-template-rows: 27% 27% 40%;
+        justify-content: space-evenly;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    } */
+    .container {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .featured {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 90%;
+        /* flex: 90%; */
+        height: fit-content;
+        overflow-wrap: break-word;
+    }
+    #featured-image {
+        height: fit-content;
+        width: fit-content;
+    }
+    /* .hairstyle {
+        display: flex;
+        flex-direction: column;
+       width: 90%;
+       height: fit-content;
+       margin-left: 10px;
+       margin-right: 10x;
+    }
+    .losing {
+        display: flex;
+        flex-direction: column;
+       width: 90%;
+       height: fit-content;
+       margin-left: 10px;
+       margin-right: 10x;
+       padding-bottom: 10px;
+    } 
+    #losing-image {
+        max-height: 200px;
+        max-width: 200px;
+    } */
   }
